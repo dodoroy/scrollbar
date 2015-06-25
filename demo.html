@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>scrollbar demo</title>
+<link rel="stylesheet" type="text/css" href="scrollbar.css">
+<style type="text/css">
+
+      .wrapper { position:relative; margin:0px auto; padding:0px; width: 600px; height: 400px; overflow: hidden; }
+      .wrapper .content { background-image: url('./azusa.jpg'); width: 1280px; height: 720px; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="content"></div>
+</div>
+<script type="text/javascript" src="../jquery-1.11.2.min.js"></script>
+
+
+<script type="text/javascript" src="scrollbar.js"></script>
+<script type="text/javascript">
+/*$('.wrapper').Scrollbar();*/
+new Scrollbar('.wrapper')
+</script>
+</body>
+</html>
